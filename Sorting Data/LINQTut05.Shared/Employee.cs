@@ -10,11 +10,13 @@ namespace LINQTut05.Shared
         public string  EmployeeNo { get; set; }
 
         public string Name { get; set; } 
-         
+        public string DepartmentName {  get; set; }
+
         public string Email { get; set; }
         public decimal Salary { get; set; }
 
         public List<string> Skills { get; set; } = new List<string>();
+
 
          
         public override string ToString()
@@ -26,6 +28,7 @@ namespace LINQTut05.Shared
                     $"{Name.PadRight(20, ' ')}\t" +
                     $"{Email.PadRight(32, ' ')}\t"  +
                     $"{String.Format("{0:C0}", Salary)}  "  +
+                    $"{DepartmentName.PadRight( 20, ' ')}\t"+
                     $"[ {string.Join(", ", Skills)} ]";
 
         }

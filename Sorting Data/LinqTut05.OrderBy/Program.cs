@@ -56,6 +56,17 @@ namespace LinqTut05.OrderBy
 
 
 
+            var numbers = new List<int> { 1, 2, 9, 6, 3, 5, 8, 3, 7, 4, 18, 11, 32, 22, 19, 14, 13 };
+
+            var SortedNumbers = numbers.OrderBy(x => x);
+
+            SortedNumbers.Print("Sorted Numbers Asc");
+
+
+           
+            var SortedNumbersDesc = numbers.OrderByDescending(x => x);
+
+            SortedNumbersDesc.Print("Sorted Numbers Desc");
 
 
 

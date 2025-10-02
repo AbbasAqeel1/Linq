@@ -15,12 +15,12 @@ namespace Linq.Tut05.OrderBy.Comparer
             var emp1Year = emp1.EmployeeNo.Split('-')[0];
             var emp2Year = emp2.EmployeeNo.Split('-')[0];
 
-            var emp1No = emp1.EmployeeNo.Split('-')[2];
-            var emp2No = emp2.EmployeeNo.Split('-')[2];
+            var emp1ID = emp1.EmployeeNo.Split('-')[2];
+            var emp2ID = emp2.EmployeeNo.Split('-')[2];
 
             if(emp1Year == emp2Year)
             {
-                return emp1No.CompareTo(emp2No);
+                return emp1ID.CompareTo(emp2ID);
             }
             else
             {

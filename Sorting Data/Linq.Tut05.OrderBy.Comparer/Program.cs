@@ -13,8 +13,9 @@ namespace Linq.Tut05.OrderBy.Comparer
 
             //IOrderedEnumerable<Employee> orderedEmps = emps.OrderBy(e => e.EmployeeNo);
              
-           var  orderedEmps = emps.OrderBy(e => e,new EmployeeComparer());
 
+            //order employees asc , when they have similar things it will compare between them by some specific properties
+            var  orderedEmps = emps.OrderBy(e => e,new EmployeeComparer());
 
             orderedEmps.Print("Ordered Employees by Emp No");
 
