@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35728.132 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTut05.OrderBy", "..\LinqTut05.OrderBy\LinqTut05.OrderBy.csproj", "{5BA0E2D2-72DB-4F07-92C2-881F506EE2C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQTut05.Shared", "..\LINQTut05.Shared\LINQTut05.Shared.csproj", "{E31B3BC5-48C6-437B-B178-281E3B771F65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTut05.ThenBy", "..\LinqTut05.ThenBy\LinqTut05.ThenBy.csproj", "{A8C2AEDB-55BD-4EAB-933E-6DE0D285F4D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq.Tut05.OrderBy.Comparer", "..\Linq.Tut05.OrderBy.Comparer\Linq.Tut05.OrderBy.Comparer.csproj", "{C892E6FA-4543-4CC8-879C-50DEA94BA0CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTut05.Reverse", "..\LinqTut05.Reverse\LinqTut05.Reverse.csproj", "{4DA29EBC-85D4-457B-9655-9CD0BCADE37F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BA0E2D2-72DB-4F07-92C2-881F506EE2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA0E2D2-72DB-4F07-92C2-881F506EE2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA0E2D2-72DB-4F07-92C2-881F506EE2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA0E2D2-72DB-4F07-92C2-881F506EE2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E31B3BC5-48C6-437B-B178-281E3B771F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31B3BC5-48C6-437B-B178-281E3B771F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31B3BC5-48C6-437B-B178-281E3B771F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31B3BC5-48C6-437B-B178-281E3B771F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C2AEDB-55BD-4EAB-933E-6DE0D285F4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C2AEDB-55BD-4EAB-933E-6DE0D285F4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C2AEDB-55BD-4EAB-933E-6DE0D285F4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C2AEDB-55BD-4EAB-933E-6DE0D285F4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C892E6FA-4543-4CC8-879C-50DEA94BA0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C892E6FA-4543-4CC8-879C-50DEA94BA0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C892E6FA-4543-4CC8-879C-50DEA94BA0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C892E6FA-4543-4CC8-879C-50DEA94BA0CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DA29EBC-85D4-457B-9655-9CD0BCADE37F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DA29EBC-85D4-457B-9655-9CD0BCADE37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DA29EBC-85D4-457B-9655-9CD0BCADE37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DA29EBC-85D4-457B-9655-9CD0BCADE37F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
