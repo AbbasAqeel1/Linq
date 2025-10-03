@@ -13,9 +13,9 @@ namespace LinqTu004.Shared
 
         static void Main(string[] args)
         {
-            RunExample01();
+            //RunExample01();
             //RunExample02();
-            //RunExample03();
+            RunExample03();
 
 
             Console.ReadKey();

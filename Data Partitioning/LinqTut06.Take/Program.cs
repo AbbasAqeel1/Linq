@@ -18,7 +18,7 @@ namespace LinqTut06.Take
 
 
 
-            var q2 = emps.TakeWhile(x => x.Salary != 3700);
+            var q2 = emps.TakeWhile(x => x.Salary != 3158);
             q2.Print("Taking record until reach salary 3700$");
 
 

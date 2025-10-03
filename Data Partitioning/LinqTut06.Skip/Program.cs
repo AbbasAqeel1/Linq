@@ -24,8 +24,8 @@ namespace LinqTut06.Skip
 
 
 
-            var q3 = emps.SkipLast(20);
-            q3.Print("Skipping last 74 Employee");
+            var q3 = emps.SkipLast(10);
+            q3.Print("Skipping last 10 Employee");
 
             Console.ReadKey();
         }
