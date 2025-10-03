@@ -35,7 +35,7 @@ namespace LinqTu004.SelectMany
 
             var FirstTeam = employees[..3];
             var LastTeam = employees[^3..];
-
+            //this will make teams matching first three employees with last three employees in the list
             var Teams = FirstTeam.Zip(LastTeam,(First,Last) => $"{First.FullName} -> {Last.FullName}");
 
             foreach(var team in Teams)
