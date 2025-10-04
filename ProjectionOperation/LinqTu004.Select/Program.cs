@@ -26,6 +26,7 @@ namespace LinqTu004.Shared
         {
             List<string> list = new() { "I", "Love", "asp.net", "core" };
 
+            //convert every  word to uppercase
             var result = list.Select(x => x.ToUpper());
 
             foreach (var item in result)
@@ -50,6 +51,7 @@ namespace LinqTu004.Shared
         {
             var Emps = Repository.LoadEmployees();
 
+            //This will select EmployeeName and number Of his skills
             var result = Emps.Select(x => {
                 return new EmployeeDto { Name = x.FirstName +  " " + x.LastName,TotalSkills = x.Skills.Count };
                 }); 

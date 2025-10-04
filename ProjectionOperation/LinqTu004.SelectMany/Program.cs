@@ -8,7 +8,7 @@ namespace LinqTu004.SelectMany
     {
         static void Main(string[] args)
         {
-
+            
             RunExample01();
             RunExample02();
             
@@ -25,7 +25,7 @@ namespace LinqTu004.SelectMany
                 "In general i love programming"
             };
 
-
+            //this will split each word inside the list or strings and put it inside result as a single word
             var result = Sequences.SelectMany(x => x.Split(' '));
 
             foreach (var item in result)
@@ -40,7 +40,7 @@ namespace LinqTu004.SelectMany
 
 
 
-
+            //this will take the skills without repetition
             var result = Employees.SelectMany(x => x.Skills).Distinct();
 
             var result01 = (from emp in Employees
