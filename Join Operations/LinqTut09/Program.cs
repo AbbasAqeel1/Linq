@@ -48,7 +48,7 @@ namespace LinqTut09
             var employees = Repository.LoadEmployees();
             var departments = Repository.LoadDepartments();
 
-
+            //using method 
             var result = employees.Join(departments, emp => emp.DepartmentId, dept => dept.ID,
                 (emp,dept) => 
                 new EmployeeDto{
@@ -67,7 +67,7 @@ namespace LinqTut09
             var employees = Repository.LoadEmployees();
             var departments = Repository.LoadDepartments();
 
-
+            //Using method syntax
             var result = departments.GroupJoin(employees, dep => dep.ID, emp => emp.DepartmentId,
 
 
@@ -82,6 +82,10 @@ namespace LinqTut09
             {
                 Console.WriteLine($"------- {item.DepartmentName} -------");
 
+
+
+
+                
                 foreach(var employee in item.Employees)
                 {
                     Console.WriteLine($"{employee}");
@@ -95,7 +99,7 @@ namespace LinqTut09
             var employees = Repository.LoadEmployees();
             var departments = Repository.LoadDepartments();
 
-
+            //using query syntax
             var result = from department in departments
                          join emp in employees on department.ID equals emp.DepartmentId into empgroup
 
