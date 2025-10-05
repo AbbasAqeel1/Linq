@@ -16,7 +16,7 @@ namespace LINQTut08.Shared
 
         public string Gender { get; set; }
 
-        public string Department { get; set; }
+        public int DepartmentId { get; set; }
          
         public bool HasHealthInsurance { get; set; }
 
@@ -32,7 +32,7 @@ namespace LINQTut08.Shared
                     $" {String.Concat(LastName, ", ", FirstName).PadRight(15, ' ')}\t" + 
                     $"{HireDate.Date.ToShortDateString()}\t" +
                     $"{Gender.PadRight(10, ' ')}\t" +
-                    $"{Department.PadRight(10, ' ')}\t" +
+                    $"{DepartmentId}\t" +
                     $"{HasHealthInsurance}\t" +
                     $"{HasPensionPlan}\t" +
                     $"${Salary.ToString("0.00")}");
