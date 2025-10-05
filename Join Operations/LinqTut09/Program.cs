@@ -9,16 +9,14 @@ namespace LinqTut09
 {
     internal class Program
     {
-
-
         static void Main(string[] args)
         {
 
 
             RunJoinExample();
             RunJoinExampleUsingQuerySyntax();
-            RunGroupJoinExample();
-            RunGroupJoinExampleUsingQuerySyntax();
+            //RunGroupJoinExample();
+            //RunGroupJoinExampleUsingQuerySyntax();
             Console.ReadKey();
         }
 
@@ -41,7 +39,7 @@ namespace LinqTut09
 
             foreach (var item in result)
             {
-                Console.WriteLine($"{item.Name}, {item.DepartmentName}");
+                Console.WriteLine($"{item.Name.PadRight(20,' ')}, {item.DepartmentName}");
             }
         }
 
@@ -60,7 +58,7 @@ namespace LinqTut09
 
             foreach(var item in result)
             {
-                Console.WriteLine($"{item.Name}  ,  {item.DepartmentName}");
+                Console.WriteLine($"{item.Name.PadRight(20,' ')}, {item.DepartmentName}");
             }
         }
 
