@@ -63,7 +63,11 @@ namespace LinqTut13
             var q1 = QuestionBank.Randomize(3);
             var q2 = QuestionBank.Randomize(5);
             var q3 = QuestionBank.Randomize(5);
-            
+
+
+            Console.WriteLine("\n\n\n-------------------------------");
+            Console.WriteLine("Run Method 4 Concatination using instantiation");
+            Console.WriteLine("-------------------------------\n");
             var questions1 = new[] { q1, q2, q3 }.SelectMany(q => q);
             questions1.ToQuiz();
             
