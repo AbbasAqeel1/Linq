@@ -46,6 +46,10 @@ namespace LinqTut15
 
         private static void RunIntersect()
         {
+            Console.WriteLine("\n\n--------------------------------");
+            Console.WriteLine("    Intersect Method    ");
+            Console.WriteLine("--------------------------------\n");
+            
             var set1 = Repository.Meeting1.Participants;
             var set2 = Repository.Meeting2.Participants;
 
@@ -66,6 +70,9 @@ namespace LinqTut15
 
         private static void RunExcetp()
         {
+            Console.WriteLine("\n\n--------------------------------");
+            Console.WriteLine("    Except Method    ");
+            Console.WriteLine("--------------------------------\n");
             var set1 = Repository.Meeting1.Participants;
             var set2 = Repository.Meeting2.Participants;
 
@@ -88,6 +95,9 @@ namespace LinqTut15
 
         private static void RunDistinctAndDistinctBy()
         {
+            Console.WriteLine("\n\n--------------------------------");
+            Console.WriteLine("    Distinct Method    ");
+            Console.WriteLine("--------------------------------\n");
             var ParticipantsM1M2 = Repository.Meeting1.Participants.Concat(Repository.Meeting2.Participants);
 
             ParticipantsM1M2.Print("Meeting 1 and Meeting 2 participants");
