@@ -23,6 +23,11 @@ namespace LinqTut15
         /// </summary>
         private static void RunUnion()
         {
+
+            Console.WriteLine("\n\n--------------------------------");
+            Console.WriteLine("    Union Method    ");
+            Console.WriteLine("--------------------------------\n");
+
             var set1 = Repository.Meeting1.Participants;
             var set2 = Repository.Meeting2.Participants;
 
