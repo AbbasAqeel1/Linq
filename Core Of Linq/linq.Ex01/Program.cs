@@ -26,6 +26,16 @@ namespace linq.Ex01
             FemaleWithFirstNameStartWithS02.Print("Female employees with first name start with s. using Where");
 
 
+            var FemaleEmployeesInHRDepartmentAndHasPensionPlan = employees.Where(x => x.Gender.ToLowerInvariant() == "female"
+            && x.Department.ToLowerInvariant() == "hr" && x.HasPensionPlan);
+
+            FemaleEmployeesInHRDepartmentAndHasPensionPlan.Print("Female in HR Has Pension Plan");
+
+            var FemaleEmployeesInHRDepartmentAndDoesNotHasPensionPlan = employees.Where(x => x.Gender.ToLowerInvariant() == "female"
+            && x.Department.ToLowerInvariant() == "hr" && !x.HasPensionPlan);
+
+            FemaleEmployeesInHRDepartmentAndDoesNotHasPensionPlan.Print("Female in HR does not Has Pension Plan");
+
 
             Console.ReadKey();
         }

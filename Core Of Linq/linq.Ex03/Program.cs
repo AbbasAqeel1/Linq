@@ -23,6 +23,10 @@ namespace linq.Ex03
 
             empsInHrDepartment.Print("Employees in hr department");
 
+            var empsWithSalaryBelow90k = employees.Where(x => x.Salary < 200000);
+
+            empsWithSalaryBelow90k.Print("Employees with salary < 200K");
+
             Console.ReadKey();
         }
     }

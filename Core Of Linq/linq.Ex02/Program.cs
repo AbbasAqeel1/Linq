@@ -32,6 +32,22 @@ namespace linq.Ex02
                 Console.WriteLine(num);
             }
 
+            var FirstThreeNums = Numbers.Take(3);
+            Console.WriteLine("\n\nFirst 3 numbers:\n");
+            foreach (var num in FirstThreeNums)
+            {
+                Console.WriteLine(num);
+            }
+
+            int numsCount = Numbers.Count();
+
+            var LastThreeNums = Numbers.TakeLast(3);
+            Console.WriteLine("\n\nLast 3 numbers:\n");
+            foreach (var num in LastThreeNums)
+            {
+                Console.WriteLine(num);
+            }
+
             Console.ReadKey();
         }
     }
