@@ -21,7 +21,7 @@ namespace FunctionalProgramming
                         LastName = "Cole",
                         HireDate = new DateTime(2017, 11, 2),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = true,
                         Salary = 103200m
@@ -33,7 +33,7 @@ namespace FunctionalProgramming
                         LastName = "Wolfe",
                         HireDate = new DateTime(2018, 4, 14),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 192400m
@@ -57,7 +57,7 @@ namespace FunctionalProgramming
                         LastName = "Evans",
                         HireDate = new DateTime(2016, 8, 17),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = true,
                         Salary = 155500m
@@ -153,7 +153,7 @@ namespace FunctionalProgramming
                         LastName = "Cervantes",
                         HireDate = new DateTime(2015, 3, 25),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = true,
                         Salary = 338700m
@@ -177,7 +177,7 @@ namespace FunctionalProgramming
                         LastName = "Cantu",
                         HireDate = new DateTime(2021, 5, 26),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 343200m
@@ -237,7 +237,7 @@ namespace FunctionalProgramming
                         LastName = "Lott",
                         HireDate = new DateTime(2016, 12, 12),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = true,
                         Salary = 146600m
@@ -393,7 +393,7 @@ namespace FunctionalProgramming
                         LastName = "Middleton",
                         HireDate = new DateTime(2021, 4, 2),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = false,
                         Salary = 377400m
@@ -417,7 +417,7 @@ namespace FunctionalProgramming
                         LastName = "Beard",
                         HireDate = new DateTime(2014, 4, 25),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = true,
                         Salary = 224000m
@@ -429,7 +429,7 @@ namespace FunctionalProgramming
                         LastName = "Pratt",
                         HireDate = new DateTime(2017, 8, 12),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = true,
                         Salary = 360300m
@@ -465,7 +465,7 @@ namespace FunctionalProgramming
                         LastName = "Noble",
                         HireDate = new DateTime(2014, 10, 6),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 176300m
@@ -489,7 +489,7 @@ namespace FunctionalProgramming
                         LastName = "Bradford",
                         HireDate = new DateTime(2018, 4, 2),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 296100m
@@ -633,7 +633,7 @@ namespace FunctionalProgramming
                         LastName = "Justice",
                         HireDate = new DateTime(2019, 8, 29),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = false,
                         Salary = 143100m
@@ -645,7 +645,7 @@ namespace FunctionalProgramming
                         LastName = "Mathews",
                         HireDate = new DateTime(2016, 5, 31),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = true,
                         Salary = 366000m
@@ -717,7 +717,7 @@ namespace FunctionalProgramming
                         LastName = "Hughes",
                         HireDate = new DateTime(2014, 4, 26),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 370000m
@@ -729,7 +729,7 @@ namespace FunctionalProgramming
                         LastName = "Phillips",
                         HireDate = new DateTime(2019, 6, 19),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 151000m
@@ -861,7 +861,7 @@ namespace FunctionalProgramming
                         LastName = "Green",
                         HireDate = new DateTime(2016, 10, 17),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = true,
                         Salary = 330300m
@@ -885,7 +885,7 @@ namespace FunctionalProgramming
                         LastName = "Brennan",
                         HireDate = new DateTime(2018, 5, 18),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = false,
                         Salary = 243600m
@@ -909,7 +909,7 @@ namespace FunctionalProgramming
                         LastName = "Meyers",
                         HireDate = new DateTime(2021, 10, 16),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 342000m
@@ -1125,7 +1125,7 @@ namespace FunctionalProgramming
                         LastName = "Contreras",
                         HireDate = new DateTime(2017, 7, 1),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = false,
                         Salary = 203800m
@@ -1137,7 +1137,7 @@ namespace FunctionalProgramming
                         LastName = "Cooper",
                         HireDate = new DateTime(2017, 3, 31),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = true,
                         Salary = 329400m
@@ -1161,7 +1161,7 @@ namespace FunctionalProgramming
                         LastName = "Morales",
                         HireDate = new DateTime(2021, 5, 19),
                         Gender = "male",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = true,
                         Salary = 120300m
@@ -1173,7 +1173,7 @@ namespace FunctionalProgramming
                         LastName = "Moss",
                         HireDate = new DateTime(2016, 8, 2),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = true,
                         Salary = 167100m
@@ -1185,7 +1185,7 @@ namespace FunctionalProgramming
                         LastName = "Bailey",
                         HireDate = new DateTime(2014, 3, 4),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = true,
                         HasPensionPlan = false,
                         Salary = 232500m
@@ -1197,7 +1197,7 @@ namespace FunctionalProgramming
                         LastName = "Pope",
                         HireDate = new DateTime(2020, 7, 3),
                         Gender = "female",
-                        Department = "FIMAMCE",
+                        Department = "FINANCE",
                         HasHealthInsurance = false,
                         HasPensionPlan = false,
                         Salary = 305300m
