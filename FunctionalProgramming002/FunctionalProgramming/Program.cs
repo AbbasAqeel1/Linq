@@ -1,4 +1,5 @@
-﻿    using System;
+﻿using System;
+using System.Linq;
 
 namespace FunctionalProgramming
 {
@@ -7,8 +8,8 @@ namespace FunctionalProgramming
         static void Main(string[] args)
         {
 
-            // RunExtensionProcedural(); 
-            // RunExtensionFunctional01();
+            //RunExtensionProcedural(); 
+            //RunExtensionFunctional01();
             RunExtensionFunctional02();
             Console.ReadKey();
         }
@@ -128,6 +129,25 @@ namespace FunctionalProgramming
             var q11 = list.Filter( e => e.Salary < 107000 && e.Gender == "female");
             q11.Print("Employees with Salary < $107000 and female");
 
+            var q12 = list.Filter(e => e.Department.ToLowerInvariant() == "finance" && e.HireDate.Year >= 2020 && e.Salary >= 150000);
+            q12.Print("Employees In Department [Finance] with Salary > 150000 and Hired in 2020 and above");
+
+            //brings all Departments 
+            var q13 = list.Select(e => e.Department).Distinct().ToList();
+
+            Console.WriteLine("\n\nDepartments:");
+            foreach(var q in q13)
+                Console.WriteLine($"{q}");
+
+            var q14 = list.Select(e => e.FirstName + " " + e.LastName);
+
+            Console.WriteLine("\n\nEmployees Full Name:");
+            foreach (var q in q14)
+                Console.WriteLine(q);
+
+            var q15 = list.Filter(e => e.Gender.ToLowerInvariant() == "female" && e.Department.ToLowerInvariant() == "it");
+
+            q15.Print("Female employees in IT Department");
         }
     }
 }
