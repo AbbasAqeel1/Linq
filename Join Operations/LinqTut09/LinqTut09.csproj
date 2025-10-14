@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Grouping Data\LINQTut08.Shared\LINQTut08.Shared.csproj" />
+    <ProjectReference Include="..\LINQTut09.Shared\LINQTut09.Shared.csproj" />
   </ItemGroup>
 
 </Project>

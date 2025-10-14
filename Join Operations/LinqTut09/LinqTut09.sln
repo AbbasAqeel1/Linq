@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTut09", "LinqTut09.csproj", "{E6B373C5-16CD-4973-8B95-BB46A6AC8055}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQTut08.Shared", "..\..\Grouping Data\LINQTut08.Shared\LINQTut08.Shared.csproj", "{7DD35262-3852-4C8E-8CE8-9D6340205739}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQTut09.Shared", "..\LINQTut09.Shared\LINQTut09.Shared.csproj", "{AB94F39A-F724-4F08-B4E9-408035AFA09B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{E6B373C5-16CD-4973-8B95-BB46A6AC8055}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6B373C5-16CD-4973-8B95-BB46A6AC8055}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6B373C5-16CD-4973-8B95-BB46A6AC8055}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DD35262-3852-4C8E-8CE8-9D6340205739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DD35262-3852-4C8E-8CE8-9D6340205739}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DD35262-3852-4C8E-8CE8-9D6340205739}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DD35262-3852-4C8E-8CE8-9D6340205739}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB94F39A-F724-4F08-B4E9-408035AFA09B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB94F39A-F724-4F08-B4E9-408035AFA09B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB94F39A-F724-4F08-B4E9-408035AFA09B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB94F39A-F724-4F08-B4E9-408035AFA09B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Runtime.Intrinsics.Arm;
-using LINQTut08.Shared;
+using LINQTut09.Shared;
 
 
 
@@ -13,23 +13,23 @@ namespace LinqTut09
         {
 
 
-            RunJoinExample();
-            RunJoinExampleUsingQuerySyntax();
-            //RunGroupJoinExample();
-            //RunGroupJoinExampleUsingQuerySyntax();
+            //RunJoinExample();
+            //RunJoinExampleUsingQuerySyntax();
+            RunGroupJoinExample();
+            RunGroupJoinExampleUsingQuerySyntax();
             Console.ReadKey();
         }
 
         private static void RunJoinExampleUsingQuerySyntax()
         {
             var employees = Repository.LoadEmployees();
-            var departments = Repository.LoadDepartments();
+            var departments = Repository.LoadDepartment();
 
 
             var result = from employee in employees
                          join department in departments
 
-                         on employee.DepartmentId equals department.ID
+                         on employee.DepartmentId equals department.Id
                          select new EmployeeDto
                          {
                              Name = employee.FirstName + " " + employee.LastName,
@@ -46,10 +46,14 @@ namespace LinqTut09
         private static void RunJoinExample()
         {
             var employees = Repository.LoadEmployees();
-            var departments = Repository.LoadDepartments();
+            var departments = Repository.LoadDepartment();
+
+
+
+
 
             //using method 
-            var result = employees.Join(departments, emp => emp.DepartmentId, dept => dept.ID,
+            var result = employees.Join(departments, emp => emp.DepartmentId, dept => dept.Id,
                 (emp,dept) => 
                 new EmployeeDto{
                     Name = emp.FirstName + " " + emp.LastName,
@@ -65,10 +69,10 @@ namespace LinqTut09
         private static void RunGroupJoinExample()
         {
             var employees = Repository.LoadEmployees();
-            var departments = Repository.LoadDepartments();
+            var departments = Repository.LoadDepartment();
 
             //Using method syntax
-            var result = departments.GroupJoin(employees, dep => dep.ID, emp => emp.DepartmentId,
+            var result = departments.GroupJoin(employees, dep => dep.Id, emp => emp.DepartmentId,
 
 
                 (dep, emp) => new DepartmentGroup
@@ -97,11 +101,11 @@ namespace LinqTut09
         private static void RunGroupJoinExampleUsingQuerySyntax()
         {
             var employees = Repository.LoadEmployees();
-            var departments = Repository.LoadDepartments();
+            var departments = Repository.LoadDepartment();
 
             //using query syntax
             var result = from department in departments
-                         join emp in employees on department.ID equals emp.DepartmentId into empgroup
+                         join emp in employees on department.Id equals emp.DepartmentId into empgroup
 
                          select empgroup;
 
