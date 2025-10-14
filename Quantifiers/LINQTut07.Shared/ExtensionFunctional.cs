@@ -27,12 +27,15 @@ namespace LINQTut07.Shared
             Console.WriteLine($"│   {title.PadRight(52, ' ')}│");
             Console.WriteLine("└───────────────────────────────────────────────────────┘");
             Console.WriteLine();
+            int counter = 1;
             foreach (var item in source)
             {
+               
                 if (typeof(T).IsValueType)
-                    Console.Write($" {item} "); // 1, 2, 3
+                    Console.Write($"{item}"); // 1, 2, 3
                 else
                     Console.WriteLine(item);
+                
             }
                 
          

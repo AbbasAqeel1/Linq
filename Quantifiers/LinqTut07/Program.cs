@@ -1,5 +1,6 @@
 ﻿using System;
 using LINQTut07.Shared;
+using System.Linq;
 
 
 namespace LinqTut07
@@ -8,6 +9,10 @@ namespace LinqTut07
     {
         static void Main(string[] args)
         {
+
+            var emps = Repository.LoadEmployees();
+            emps.Print("All Employees");
+            Console.WriteLine("\n\n\n");
 
             //RunAnyDemo();
             //RunAllDemo();
@@ -34,6 +39,11 @@ namespace LinqTut07
             var q3 = employees.Any(x => x.Skills.Count == 1);
             Console.WriteLine($"Check if there is an employee have one Skill?: {q3}");
 
+            var q4 = employees.Any(x => x.Skills.Contains("Oracle"));
+            Console.WriteLine($"Is there any employee works on Oracle? {q4}");
+
+            var q5 = employees.Any(x => x.Skills.Count() == 0);
+            Console.WriteLine($"Is there any employee does not have any skill? {q5}");
 
         }
 
@@ -44,12 +54,14 @@ namespace LinqTut07
 
             //True if all employees have emails , false if there is one employee has no email
             var q1 = employees.All(x => !string.IsNullOrWhiteSpace(x.Email));
-            Console.WriteLine($"If all Employees have Emails?: {q1}");
+            Console.WriteLine($"Do all Employees have Emails?: {q1}");
 
             //False if there is one employee has no C# skill
             var q2 = employees.All(x => x.Skills.Any(s => s =="C#"));
-            Console.WriteLine($"If all Employees have C# Skill?: {q2}");
+            Console.WriteLine($"Do all Employees have C# Skill?: {q2}");
 
+            var q3 = employees.All(x => x.Skills.Count() >= 3);
+            Console.WriteLine($"Do all Employees Have 3 or more skills?: {q3}");
 
 
         }
@@ -64,7 +76,7 @@ namespace LinqTut07
                      where employee.Skills.Any(s => s == "C++")
                      select employee;
             
-            q1.Print("All employees with C++ Skill:");
+            q1.Print("All employees with C++ Skill using query");
 
 
             //this will not include employees with C# skill
@@ -75,6 +87,8 @@ namespace LinqTut07
 
             q2.Print("Employees with skills have 3 char and more.");
 
+            var q3 = employees.Where(x => x.Skills.Contains("C++"));
+            q3.Print("All Employees contain c++ using method");
 
         }
 
@@ -91,7 +105,23 @@ namespace LinqTut07
             //This will check if there is an employee with specific Email
             var result2 = employees.Contains(e1);
             Console.WriteLine($"check if any employee has emial with Evans.Hester@example.com: {result2}");
-            
+
+            var result3 = employees.Where(x => x.Name.Contains("Juliana"));
+            if (result3 != null)
+            {
+                Console.WriteLine("Employee Found: ");
+                result3.Print("Cathryn Information.");
+            }
+            else
+            {
+                Console.WriteLine("Employee not found in the Data Base.");
+            }
+
+
+            Console.WriteLine("\n\n\n");
+
+            var q4 = employees.All(x => x.Salary > 50000);
+            Console.WriteLine($"Does all emps hvae salary more than 50000? {q4}");
         }
 
     }
