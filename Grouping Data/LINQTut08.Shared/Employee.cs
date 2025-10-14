@@ -17,7 +17,8 @@ namespace LINQTut08.Shared
         public string Gender { get; set; }
 
         public int DepartmentId { get; set; }
-         
+        
+        
         public bool HasHealthInsurance { get; set; }
 
         public bool HasPensionPlan { get; set; }
