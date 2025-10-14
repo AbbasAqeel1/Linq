@@ -12,7 +12,7 @@ namespace LinqTut06.Chunck
 
             var emps = Repository.LoadEmployees();
 
-            var q1 = emps.Chunk(10).ToList();
+            var q1 = emps.Chunk(15).ToList();
 
             for(int i =0;i< q1.Count();i++)
             {

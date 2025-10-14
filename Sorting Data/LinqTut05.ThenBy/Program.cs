@@ -29,6 +29,9 @@ namespace LinqTut05.ThenBy
 
 
 
+            var empsByDepartmentThenByYear = emps.OrderBy(e => e.DepartmentName).ThenBy(e => e.EmployeeNo.Split('-')[0]);
+            empsByDepartmentThenByYear.Print("Emps Order By Department Then Year");
+
             Console.ReadKey();
         }
     

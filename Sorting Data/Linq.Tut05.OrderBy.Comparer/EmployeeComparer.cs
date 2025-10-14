@@ -27,7 +27,7 @@ namespace Linq.Tut05.OrderBy.Comparer
                 return emp1Year.CompareTo(emp2Year);
             }
 
-            throw new NotImplementedException();
+            
             
         }
     }

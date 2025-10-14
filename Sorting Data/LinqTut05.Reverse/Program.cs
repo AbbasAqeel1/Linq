@@ -18,6 +18,12 @@ namespace LinqTut05.Reverse
             reversedFruits.Print("Reversed Fruits");
 
 
+            var emps = Repository.LoadEmployees();
+
+            emps.Reverse();
+
+
+
 
             Console.ReadKey();
         }
