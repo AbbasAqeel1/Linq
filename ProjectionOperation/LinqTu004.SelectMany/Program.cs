@@ -50,6 +50,8 @@ namespace LinqTu004.SelectMany
             {
                 Console.WriteLine(item);
             }
+
+
         }
     }
 }

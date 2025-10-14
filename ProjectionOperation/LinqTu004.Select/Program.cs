@@ -13,8 +13,8 @@ namespace LinqTu004.Shared
 
         static void Main(string[] args)
         {
-            //RunExample01();
-            //RunExample02();
+            RunExample01();
+            RunExample02();
             RunExample03();
 
 
@@ -52,9 +52,11 @@ namespace LinqTu004.Shared
             var Emps = Repository.LoadEmployees();
 
             //This will select EmployeeName and number Of his skills
-            var result = Emps.Select(x => {
-                return new EmployeeDto { Name = x.FirstName +  " " + x.LastName,TotalSkills = x.Skills.Count };
-                }); 
+            var result = Emps.Select(x =>
+            {
+                return new EmployeeDto { Name = x.FirstName + " " + x.LastName, TotalSkills = x.Skills.Count };
+
+            });
 
             foreach (var item in result)
             {
