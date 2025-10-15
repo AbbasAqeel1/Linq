@@ -11,7 +11,7 @@ namespace LinqTut15
         public static void Main(string[] args)
         {
 
-            //RunDistinctAndDistinctBy();
+            RunDistinctAndDistinctBy();
             RunExcetp();
             RunIntersect();
             RunUnion();
@@ -19,7 +19,8 @@ namespace LinqTut15
         }
 
         /// <summary>
-        /// brings the elements that exists in set1 and set2 without repeat duplicates 
+        /// brings the elements that exists in set1 and set2 without repeat duplicates
+        /// but the Both right side and left side should be the same type 
         /// </summary>
         private static void RunUnion()
         {
@@ -44,6 +45,8 @@ namespace LinqTut15
             set4.Print($"Meeting 1 set1.UnionBy(set2,x => x.EmployeeNo) Meeting 2 ({set4.Count()})");
         }
 
+
+        //brings only the elements that shows in Left side and right side
         private static void RunIntersect()
         {
             Console.WriteLine("\n\n--------------------------------");
@@ -68,6 +71,9 @@ namespace LinqTut15
 
         }
 
+
+        //brings all the elements from left side except
+        //the elements that matches the right side
         private static void RunExcetp()
         {
             Console.WriteLine("\n\n--------------------------------");
@@ -84,7 +90,7 @@ namespace LinqTut15
             set3.Print($"\nMeeting1 participants except Meeting2 participants ({set3.Count()})");
 
 
-            var set4 = set1.ExceptBy(set2.Select(x => x.EmployeeNo), x => x.EmployeeNo);
+            var set4 = set1.ExceptBy(set2.Select(x => x.EmployeeNo),x => x.EmployeeNo);
 
             set4.Print($"\nMeeting1 participants exceptBy (set2.Select(x => x.EmployeeNo), x => x.EmployeeNo) ({set3.Count()})");
 
@@ -93,6 +99,8 @@ namespace LinqTut15
 
         }
 
+
+        //brings all elements Without Duplicates
         private static void RunDistinctAndDistinctBy()
         {
             Console.WriteLine("\n\n--------------------------------");
