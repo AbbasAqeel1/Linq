@@ -12,9 +12,6 @@ namespace LinqTut10.DefaultIfEmpty
 
             var questions2 = questions1.DefaultIfEmpty();
 
-            var questions3 = questions2.DefaultIfEmpty(Question.Default);
-
-
 
 
 

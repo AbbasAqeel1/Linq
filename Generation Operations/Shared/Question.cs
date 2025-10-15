@@ -28,15 +28,15 @@ namespace Shared
 
         public override string ToString()
         {
-            var choices = "";
+            var choicesstr = "";
 
             foreach (var item in Choices)
             {
-                choices += $"\n\t{item.Order}) {item.Description}";
+                choicesstr += $"\n\t{item.Order}) {item.Description}";
             }
 
             return $"{Title}" +
-                   $"{choices}"; 
+                   $"{choicesstr}"; 
         }
     }
 }

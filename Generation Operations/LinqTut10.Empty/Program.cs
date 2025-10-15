@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Quic;
 using Shared;
 
 
@@ -13,20 +14,17 @@ namespace LinqTut10.Empty
 
 
 
-            //var questions = new List<Question>();
+            var question1 = Enumerable.Empty<Question>();
+            question1.ToQuiz();
 
-            //foreach (var question in questions)
-            //{
-            //    Console.WriteLine(question);
-            //}
-            
+            var question2 = question1.DefaultIfEmpty();
+            question2.ToQuiz();
 
-            var questions2 = Enumerable.Empty<Question>();
+            var question3 = question1.DefaultIfEmpty(Question.Default);
+            question3.ToQuiz();
 
-            foreach (var question in questions2)
-            {
-                Console.WriteLine(question);
-            }
+
+
 
 
 
