@@ -12,14 +12,14 @@ namespace LinqTut18
         public static void Main(string[] args)
         {
 
-            //RunAsEnumerableMethod();
-            //RunAsQueryableMethod();
-            //RunCastMethod();
-            //
-            //RunOfTypeMethod();
-            //RunToArryMethod();
-            //RunToListMethod();
-            //RunDictionaryMethod();
+            RunAsEnumerableMethod();
+            RunAsQueryableMethod();
+            RunCastMethod();
+            
+            RunOfTypeMethod();
+            RunToArryMethod();
+            RunToListMethod();
+            RunDictionaryMethod();
             RunToLookupMethod();
             Console.ReadKey();
 
@@ -57,7 +57,7 @@ namespace LinqTut18
             //example 02
             Dictionary<DateTime, List<Shipping>> dictionary2 = shippings.GroupBy(x => x.ShippingDate)
                 .ToDictionary(s => s.Key, s => s.ToList());
-            var date1 = new DateTime(2025, 10, 10, 0, 0, 0);
+            var date1 = new DateTime(2025, 10, 16, 0, 0,0);
             dictionary2[date1].Process($"sihppings on date {date1.ToString("dddd, MMMM dd yyyy")}");
         }
 
@@ -90,6 +90,17 @@ namespace LinqTut18
             var groundshippings = shippings.OfType<GroundShipping>();
 
             groundshippings.Process("Ground shippings using ofType method");
+
+            var AirShippings = shippings .OfType<AirShipping>();
+            AirShippings.Process("Air shippings using ofType method");
+
+
+            var RailShippings = shippings.OfType<RailShipping>();
+            RailShippings.Process("Rail shippings using ofType method");
+
+            var OceanShippings = shippings.OfType<OceanShipping>();
+            OceanShippings.Process("Ocean shippings using ofType method");
+
         }
 
         private static void RunCastMethod()
@@ -98,6 +109,19 @@ namespace LinqTut18
             var groundshippings2 = shippings.Where(x => x.GetType() == typeof(GroundShipping)).Cast<GroundShipping>();
 
             groundshippings2.Process("Ground shippings using casting");
+
+
+            var Airshippings = shippings.Where(x => x.GetType() == typeof(AirShipping)).Cast<AirShipping>();
+
+            Airshippings.Process("Air shippings using casting");
+
+
+            var RailShippings = shippings.Where(x => x.GetType() == typeof(RailShipping)).Cast<RailShipping>();
+            RailShippings.Process("Rail shippings using casting");
+
+            var OceanShippings = shippings.Where(x => x.GetType() == typeof(OceanShipping)).Cast<OceanShipping>();
+            OceanShippings.Process("Ocean shippings using casting");
+
         }
 
         private static void RunAsQueryableMethod()
@@ -122,9 +146,17 @@ namespace LinqTut18
 
             todayShippings.Process("Today Shippings");
 
-            IEnumerable<Shipping> todayShippings2 = shippings.AsEnumerable().Where(x => x.ShippingDate == DateTime.Today);
+            var TomorrowShippings = shippings.Where(x => x.ShippingDate == DateTime.Today.AddDays(1));
+            TomorrowShippings.Process("Tomorrow Shippings");
+            
+            
 
+
+            IEnumerable<Shipping> todayShippings2 = shippings.AsEnumerable().Where(x => x.ShippingDate == DateTime.Today);
             todayShippings2.Process("Today shippings using IEnumerable.");
+
+            IEnumerable<Shipping> yesterdayShippings = shippings.AsEnumerable().Where(x => x.ShippingDate == DateTime.Today.AddDays(-1));
+            yesterdayShippings.Process("Yesterday Shippings");
         }
     }
 }
