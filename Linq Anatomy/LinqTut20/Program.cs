@@ -13,8 +13,8 @@ namespace LinqTut20
             //DemoDeferredExecution();
             //DemoDeferredStreamingExecution();
             //DemoDeferredNonStreamingExecution();
-            //DemoTake();
-            //DemoFilterOrder();
+            DemoTake();
+            DemoFilterOrder();
             RunQuery();
             Console.ReadKey();
         }
@@ -110,7 +110,7 @@ namespace LinqTut20
         {
             var Numbers = new int[] { 8, 1, 2, 3, 4, 5, 6, 12, 9 };
 
-
+            
             var query = Numbers.Where(x => x > 5).Select(x => x * x).
                 Take(2);
 
